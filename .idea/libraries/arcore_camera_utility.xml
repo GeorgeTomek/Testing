@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="arcore_camera_utility">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Assets/GoogleARCore/Examples/ComputerVision/Plugins/src/arcore_camera_utility.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

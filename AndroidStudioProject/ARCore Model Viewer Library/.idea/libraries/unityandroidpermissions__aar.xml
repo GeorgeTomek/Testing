@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="unityandroidpermissions:@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/f40a9ebbdef37e1e20ef49e492fa3ed654ea5097/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/f40a9ebbdef37e1e20ef49e492fa3ed654ea5097/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
