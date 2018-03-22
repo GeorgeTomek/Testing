@@ -319,6 +319,11 @@
     <None Include="Assets\GoogleARCore\Examples\HelloAR\Materials\Shaders\PlaneGrid.shader" />
     <None Include="Assets\GoogleARCore\Examples\HelloAR\Materials\Shaders\PointCloud.shader" />
     <None Include="Assets\GoogleARCore\SDK\Materials\ARBackground.shader" />
+    <None Include="Assets\Shaders\Diffuse.shader" />
+    <None Include="Assets\SimpleObj\Demo\Shaders\TextShaderZ.shader" />
+    <None Include="Assets\SimpleObj\Demo\Shaders\UnlitNoFog.shader" />
+    <None Include="Assets\SimpleObj\Documentation.txt" />
+    <None Include="Assets\SimpleObj\ReadMe.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

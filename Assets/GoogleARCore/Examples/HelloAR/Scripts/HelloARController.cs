@@ -71,6 +71,12 @@ namespace GoogleARCore.HelloAR
         /// </summary>
         private bool m_IsQuitting = false;
 
+        /// <summary>
+        /// True if place on click is enabled
+        /// </summary>
+        private bool m_ReplaceEnabled = false;
+
+
         // private bool showPlanes = true;
 
         /// <summary>
@@ -145,8 +151,11 @@ namespace GoogleARCore.HelloAR
             if (Frame.Raycast(touch.position.x, touch.position.y, raycastFilter, out hit))
             {
                 //var andyObject = Instantiate(ModelAndroidPrefab, hit.Pose.position, hit.Pose.rotation);
+                if (m_ReplaceEnabled)
+                {
+                    ModelAndroidPrefab.transform.position = hit.Pose.position;
+                }
 
-                ModelAndroidPrefab.transform.position = hit.Pose.position;
                 //ModelAndroidPrefab.transform.rotation = hit.Pose.rotation;
 
                 // Create an anchor to allow ARCore to track the hitpoint as understanding of the physical
@@ -162,7 +171,7 @@ namespace GoogleARCore.HelloAR
 
                     // Have Andy look toward the camera respecting his "up" perspective, which may be from ceiling.
 
-                    // Pro prohlizeni bude vhodnejsi nechat model pevne umisten
+                    
                     ModelAndroidPrefab.transform.LookAt(cameraPositionSameY, ModelAndroidPrefab.transform.up);
                 }
 
@@ -189,6 +198,14 @@ namespace GoogleARCore.HelloAR
                  t.enabled = flag;
              }
          }*/
+
+            /// <summary>
+            /// Allows next click to replace the model on scanned planes
+            /// </summary>
+        public void EnableReplace()
+        {
+            m_ReplaceEnabled  = !m_ReplaceEnabled;
+        }
 
         /// <summary>
         /// Quit the application if there was a connection error for the ARCore session.

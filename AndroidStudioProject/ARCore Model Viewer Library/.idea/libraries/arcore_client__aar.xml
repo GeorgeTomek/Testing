@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="arcore_client:@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.android/build-cache/399ae5e7e0e18c76ce01b24734db7aa7b95f39bc/output/res" />
-      <root url="jar://$USER_HOME$/.android/build-cache/399ae5e7e0e18c76ce01b24734db7aa7b95f39bc/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/arcore_client.aar/6bedf4a52ec924c23b3f6375bf7b5fb4/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/arcore_client.aar/6bedf4a52ec924c23b3f6375bf7b5fb4/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

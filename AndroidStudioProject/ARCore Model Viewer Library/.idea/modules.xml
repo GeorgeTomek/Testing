@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ARCore Model Viewer.iml" filepath="$PROJECT_DIR$/ARCore Model Viewer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ARCore Model Viewer Library.iml" filepath="$PROJECT_DIR$/ARCore Model Viewer Library.iml" />
     </modules>
   </component>
 </project>

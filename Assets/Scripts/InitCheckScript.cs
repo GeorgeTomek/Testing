@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using GoogleARCore;
+using UnityEngine.UI;
 
 public class InitCheckScript : MonoBehaviour
 {
+    public GameObject SwipeImage;
 
     // Use this for initialization
     void Start()
@@ -46,6 +48,9 @@ public class InitCheckScript : MonoBehaviour
                 _ShowAndroidToastMessage("Unsupported Device Not Capable");
                 break;
         }
+        yield return new WaitForSeconds(2f);
+        SwipeImage.SetActive(false);
+
     }
 
     //Copied from ComputerVisionController.cs
